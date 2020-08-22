@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Our.Umbraco.Extensions.Facets", "Our.Umbraco.Extensions.Facets\Our.Umbraco.Extensions.Facets.csproj", "{2DFC9579-FF26-45C5-8D2A-7FF68F3D3DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DFC9579-FF26-45C5-8D2A-7FF68F3D3DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFC9579-FF26-45C5-8D2A-7FF68F3D3DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFC9579-FF26-45C5-8D2A-7FF68F3D3DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFC9579-FF26-45C5-8D2A-7FF68F3D3DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC4BB2A9-D643-4077-A77B-0C040DB44C09}
+	EndGlobalSection
+EndGlobal
