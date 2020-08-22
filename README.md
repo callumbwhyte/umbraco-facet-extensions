@@ -18,6 +18,22 @@ To [install from NuGet](https://www.nuget.org/packages/Our.Umbraco.Extensions.Fa
 
     PM> Install-Package Our.Umbraco.Extensions.Facets
 
+## Usage
+
+_Read the [Examine Facets](https://github.com/callumbwhyte/examine-facets#usage) docs for information about performing a search._
+
+Normally it is possible to get a list of facets from a result like this:
+
+```
+results.GetFacet(string field);
+```
+
+Facet Extensions makes it possible to map facet results to any given type, including `IPublishedContent`. The values of the facets will be returned as an `IEnumerable<T>`.
+
+```
+results.GetFacet<T>(string field);
+```
+
 ## Contribution guidelines
 
 To raise a new bug, create an issue on the GitHub repository. To fix a bug or add new features, fork the repository and send a pull request with your changes. Feel free to add ideas to the repository's issues list if you would to discuss anything related to the library.
