@@ -1,5 +1,7 @@
 # Umbraco Facets Extensions
 
+<img src="docs/img/logo.png?raw=true" alt="Umbraco Facet Extensions" width="250" align="right" />
+
 [![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.Extensions.Facets.svg)](https://www.nuget.org/packages/Our.Umbraco.Extensions.Facets/)
 
 ## Getting started
@@ -23,6 +25,10 @@ To raise a new bug, create an issue on the GitHub repository. To fix a bug or ad
 ### Who do I talk to?
 
 This project is maintained by [Callum Whyte](https://callumwhyte.com/) and contributors. If you have any questions about the project please get in touch on [Twitter](https://twitter.com/callumbwhyte), or by raising an issue on GitHub.
+
+## Credits
+
+The package logo uses the [Filter](https://thenounproject.com/term/search/3489190/) icon from the [Noun Project](https://thenounproject.com/) by [DailyYouth](https://thenounproject.com/dailyyouthdsgn/), licensed under [CC BY 3.0 US](https://creativecommons.org/licenses/by/3.0/us/).
 
 ## License
 
