@@ -3,6 +3,7 @@
 <img src="docs/img/logo.png?raw=true" alt="Umbraco Facet Extensions" width="250" align="right" />
 
 [![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.Extensions.Facets.svg)](https://www.nuget.org/packages/Our.Umbraco.Extensions.Facets/)
+[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/packages/website-utilities/facet-extensions/)
 
 ## Getting started
 
