@@ -1,10 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using Examine;
 using Examine.Facets;
-using Umbraco.Core.Models.PublishedContent;
-using Umbraco.Web.Composing;
 
 namespace Our.Umbraco.Extensions.Facets
 {
@@ -15,33 +12,28 @@ namespace Our.Umbraco.Extensions.Facets
         /// </summary>
         public static IEnumerable<T> GetFacet<T>(this ISearchResults searchResults, string field)
         {
-            var facet = searchResults.GetFacet(field);
+            var facetResults = searchResults.GetFacet(field);
 
-            if (facet == null)
+            if (facetResults == null)
             {
                 return Enumerable.Empty<T>();
             }
 
-            return facet
-                .Select(x => ConvertValue<T>(x.Value))
+            return facetResults
+                .Select(x => x.GetValue<T>())
                 .Where(x => x != null);
         }
 
-        private static T ConvertValue<T>(object value)
+        /// <summary>
+        /// Gets the hits and values for a particular facet in the results
+        /// </summary>
+        public static IDictionary<T, int> GetFacetHits<T>(this ISearchResults searchResults, string field)
         {
-            var converter = TypeDescriptor.GetConverter(typeof(T));
+            var facetResults = searchResults.GetFacet(field);
 
-            if (converter.CanConvertFrom(value.GetType()) == true)
-            {
-                return (T)converter.ConvertFrom(value);
-            }
-
-            if (typeof(IPublishedContent).IsAssignableFrom(typeof(T)) == true)
-            {
-                return (T)Current.Mapper.Map<IPublishedContent>(value);
-            }
-
-            return Current.Mapper.Map<T>(value);
+            return facetResults
+                .Where(x => x.GetValue<T>() != null)
+                .ToDictionary(x => x.GetValue<T>(), x => x.Hits);
         }
     }
 }
