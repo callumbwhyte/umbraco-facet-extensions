@@ -7,7 +7,7 @@
 
 ## Getting started
 
-This package is supported on Umbraco 8.1+ and requires [Examine.Facets](https://github.com/callumbwhyte/examine-facets) 1.0.0+.
+This package is supported on Umbraco 8.1+ and requires [Examine.Facets](https://github.com/callumbwhyte/examine-facets) 1.1.0+.
 
 ### Installation
 

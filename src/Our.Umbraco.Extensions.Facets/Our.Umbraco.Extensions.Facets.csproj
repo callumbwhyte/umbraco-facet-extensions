@@ -15,7 +15,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Examine.Facets" Version="1.0.0" />
+    <PackageReference Include="Examine.Facets" Version="1.1.0" />
     <PackageReference Include="Our.Umbraco.Extensions.Search" Version="1.0.0" />
   </ItemGroup>
 </Project>
